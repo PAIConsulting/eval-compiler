@@ -1,0 +1,43 @@
+EVAL-COMPILER SOFTWARE AUDIT REPORT
+PAI Consulting | May 2, 2026
+
+Tool: eval-compiler
+Repository: https://github.com/PAIConsulting/eval-compiler
+Purpose: Internal tool for compiling conference evaluation responses
+AI Used at Runtime: NONE — this is a deterministic Python tool with
+no calls to any AI provider's API
+
+AUDIT ACTIONS PERFORMED
+
+1. Software Bill of Materials (SBOM) Generated
+   - Format: CycloneDX JSON
+   - File: sbom.json (this directory)
+   - Lists all direct and transitive dependencies
+   - Manually verified: no AI-related libraries present
+   - Aligns with Executive Order 14028 "Improving the Nation's
+     Cybersecurity" (May 12, 2021), which requires SBOMs for
+     software supplied to the federal government
+
+2. Static Code Analysis (CodeQL)
+   - Scanner: GitHub CodeQL (industry-standard SAST tool)
+   - Date scanned: [insert today's date]
+   - Result: 0 security alerts (clean)
+   - Screenshot: CodeQL_Scan_Result_2026-05-02.png (this directory)
+   - Aligns with NIST Secure Software Development Framework (SSDF)
+     practice PW.7: Review and/or analyze human-readable code to
+     identify vulnerabilities
+
+3. Source Code Disclosure
+   - Repository visibility: public
+   - Anyone may inspect the source code directly to verify
+     the absence of AI dependencies or runtime AI calls
+
+CONCLUSION
+
+eval-compiler has been audited using industry-standard practices.
+The tool contains no artificial intelligence at runtime, has been
+scanned for security vulnerabilities with zero findings, and its
+complete dependency inventory is available for review.
+
+Submitted by: Keith Estes, PAI Consulting
+Date: May 2, 2026
