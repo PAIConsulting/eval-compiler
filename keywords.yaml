@@ -1,0 +1,102 @@
+# keywords.yaml
+#
+# Project:    Evaluation Compiler (InfoShare evaluation reporting tool)
+# Owner:      PAI Consulting
+# Purpose:    Hand-maintained keyword dictionary for categorizing free-text
+#             comments. Entirely human-authored; no AI or machine-learning
+#             involved in producing categorizations at runtime.
+# Version:    0.1.0 (demonstration with fictional categories)
+#
+# This file is loaded with yaml.safe_load() at runtime — see compile_report.py.
+#
+# ============================================================================
+# HOW IT WORKS
+# ============================================================================
+#
+#   - Each entry has a Keyword 1 (broad category) and Keyword 2 (subcategory)
+#   - When the tool sees a free-text comment, it counts how many of each
+#     entry's "trigger" words appear in the comment
+#   - The entry with the most matches wins; ties go to the earliest-defined
+#   - If no triggers match, the comment is tagged "Uncategorized" for manual
+#     review
+#
+# ============================================================================
+# IMPORTANT
+# ============================================================================
+#
+# This example file uses fictional/generic categories for demonstration.
+# The production version is built and maintained by the user based on
+# domain expertise. No AI is involved in creating or updating this file.
+
+categories:
+  - keyword_1: "Personnel"
+    keyword_2: "Fatigue"
+    triggers: [fatigue, fatigued, tired, exhausted, exhaustion, sleep, rest, "night shift"]
+
+  - keyword_1: "Personnel"
+    keyword_2: "Workload"
+    triggers: [workload, overworked, "too much work", pressure, burnout, "peak periods", unsustainable]
+
+  - keyword_1: "Personnel"
+    keyword_2: "Staffing"
+    triggers: [staffing, "short staffed", shortage, understaffed, "not enough staff", turnover]
+
+  - keyword_1: "Personnel"
+    keyword_2: "Experience"
+    triggers: [experience, inexperienced, "new staff", onboarding, "knowledge transfer", "aging workforce"]
+
+  - keyword_1: "Equipment"
+    keyword_2: "Hardware"
+    triggers: [equipment, hardware, "spare parts", aging, "physical equipment", machinery]
+
+  - keyword_1: "Equipment"
+    keyword_2: "Software"
+    triggers: [software, "software updates", system, glitch, console, application, app, technology]
+
+  - keyword_1: "Procedures"
+    keyword_2: "Documentation"
+    triggers: [documentation, document, unclear, "outdated", "inconsistent practices", checklists, checklist]
+
+  - keyword_1: "Procedures"
+    keyword_2: "Compliance"
+    triggers: [compliance, "process compliance", procedures, "standard operating", SOP]
+
+  - keyword_1: "Training"
+    keyword_2: "Initial"
+    triggers: ["initial training", onboarding, "new hire training"]
+
+  - keyword_1: "Training"
+    keyword_2: "Recurrent"
+    triggers: ["recurrent training", refresher, "training programs", "training was minimal", simulator]
+
+  - keyword_1: "Communication"
+    keyword_2: "Inter-team"
+    triggers: [communication, "between teams", "cross-team", coordination, "inter-team"]
+
+  - keyword_1: "Communication"
+    keyword_2: "Reporting"
+    triggers: [reporting, "reporting channels", "report up", "non-routine observations"]
+
+  - keyword_1: "External"
+    keyword_2: "Weather"
+    triggers: [weather, storm, climate, "weather-related", disruption]
+
+  - keyword_1: "External"
+    keyword_2: "Regulation"
+    triggers: [regulatory, regulation, "regulatory changes", "regulatory complexity", FAA, compliance]
+
+  - keyword_1: "External"
+    keyword_2: "Supply Chain"
+    triggers: ["supply chain", supplier, parts, inventory]
+
+  - keyword_1: "Event Feedback"
+    keyword_2: "Format"
+    triggers: ["interactive sessions", breakout, hybrid, "smaller groups", networking, format]
+
+  - keyword_1: "Event Feedback"
+    keyword_2: "Logistics"
+    triggers: [venue, catering, scheduling, "ran long", logistics, location]
+
+  - keyword_1: "Event Feedback"
+    keyword_2: "Content"
+    triggers: ["practical applications", theory, "diverse perspectives", panels, slides, presentation]

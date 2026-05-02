@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OS
+*~
+
+# Output and runtime artifacts (keep the demo reports for reference, but
+# real production output should not be committed to a shared repo)
+# Uncomment the next line if this becomes a real repo containing real data:
+# reports/
+
+# Sensitive — never commit real evaluation data
+real_responses.csv
+real_data/
+*.real.csv
+
+# Temp files
+*.tmp
+*.bak
+*.log

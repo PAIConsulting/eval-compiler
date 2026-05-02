@@ -1,0 +1,22 @@
+Copyright (c) 2026 PAI Consulting
+
+All rights reserved.
+
+This software is proprietary and intended for internal use by PAI Consulting
+and its authorized representatives. It may not be copied, distributed, or
+used outside of authorized internal projects without prior written permission
+from PAI Consulting.
+
+This software:
+  - Runs entirely on a local machine
+  - Makes no network calls
+  - Includes no machine-learning or artificial-intelligence components
+  - Uses only the open-source third-party libraries listed in requirements.txt,
+    each retaining its own license terms
+
+Third-party library licenses:
+  - python-docx: MIT License
+  - PyYAML: MIT License
+  - matplotlib: PSF-based License (matplotlib license)
+
+For questions about this software, contact PAI Consulting.

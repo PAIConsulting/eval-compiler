@@ -1,0 +1,14 @@
+# requirements.txt
+#
+# Exact versions pinned for deterministic builds and audit clarity.
+# Update with care; re-run security audits after any version change.
+#
+# All dependencies below are:
+#   - Well-established, widely-used Python libraries
+#   - Open source with permissive licenses
+#   - Have no AI/ML/networking capabilities of their own
+#   - Run entirely on the local machine
+
+python-docx==1.2.0
+PyYAML==6.0.3
+matplotlib==3.10.8
